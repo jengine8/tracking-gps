@@ -41,5 +41,6 @@ public class GpsTrackModel {
     public String qnh;
     public String flg;
     public String tcs;
+    public String signal;
 
 }
