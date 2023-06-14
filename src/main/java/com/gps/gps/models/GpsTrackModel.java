@@ -42,5 +42,6 @@ public class GpsTrackModel {
     public String flg;
     public String tcs;
     public String signal;
+    public String alias;
 
 }
