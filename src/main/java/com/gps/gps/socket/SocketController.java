@@ -22,6 +22,8 @@ public class SocketController {
 
 
     public void sendTrackingService(GpsTrackModel gpsTrackModel) {
+        //Convert spd in m/s a knots
+        gpsTrackModel.convertToKnots();
         this.simpMessagingTemplate.convertAndSend("/topic/messages",gpsTrackModel);
     }
 }

@@ -44,4 +44,10 @@ public class GpsTrackModel {
     public String signal;
     public String alias;
 
+
+    public void convertToKnots(){
+        Double convertion = Double.parseDouble(this.getSpd()) * 1.9438;
+        setSpd(String.valueOf(convertion));
+    }
+
 }
